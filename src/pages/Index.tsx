@@ -4,12 +4,12 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">КИМЧИ★РЕС</div>
         <nav>
           <a href="#">Меню</a>
           <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Атмосфера</a>
+          <a href="#">Контакты</a>
         </nav>
         <button className="btn-cta">Забронировать</button>
       </header>
@@ -18,47 +18,53 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              ОСТРЕЕ.
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              ЯРЧЕ. <span>Вкуснее.</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Аутентичная корейская кухня в самом сердце города. Домашние рецепты, огненный кимчи и атмосфера настоящего Сеула — за соседним столиком.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Смотреть меню
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Забронировать стол
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/4cd85489-a601-416b-be97-0c3145804e93.jpg")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <div className="sticker">
-              СВЕЖАК
+              КИМЧИ
               <br />
               КАЖДЫЙ ДЕНЬ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #СЕУЛ_ВАЙБ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              매운맛 🌶
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * КИМЧИ КОТОРОЕ ЖЖЁТ * BULGOGI ОТ ШЕФА * ТОЛЬКО АУТЕНТИКА * ОТКРЫТЫ ДО 23:00 * ДОСТАВКА ПО ГОРОДУ * КИМЧИ КОТОРОЕ ЖЖЁТ * BULGOGI ОТ ШЕФА * ТОЛЬКО АУТЕНТИКА * ОТКРЫТЫ ДО 23:00 * ДОСТАВКА ПО ГОРОДУ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">ХИТЫ ШЕФА</h2>
             <a
               href="#"
               className="text-sm md:text-base"
@@ -73,8 +79,8 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/4cd85489-a601-416b-be97-0c3145804e93.jpg"
+                alt="Кимчи Бибимбап"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +91,23 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Кимчи Бибимбап</h3>
+                  <span className="price">780 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Рис с маринованными овощами, яйцо пашот, домашнее кимчи и соус гочуджан — классика Сеула.
                 </p>
               </div>
             </div>
 
             {/* Item 2 */}
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+              <span className="menu-tag" style={{ background: "var(--primary)", color: "white" }}>
+                Острое 🌶🌶
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/514cd80a-3007-486a-a272-f45dc41c110e.jpg"
+                alt="Тток-пок-ки"
               />
               <div className="menu-card-body">
                 <div
@@ -112,10 +118,10 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Тток-пок-ки</h3>
+                  <span className="price">620 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Рисовые клёцки в огненном соусе гочуджан с рыбными котлетками и яйцом.</p>
               </div>
             </div>
 
@@ -125,8 +131,8 @@ export default function Index() {
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/27f1a310-dfd3-4380-8111-26de9d6a2e95.jpg"
+                alt="Булгоги"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +143,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Булгоги из говядины</h3>
+                  <span className="price">1 100 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Мраморная говядина в маринаде из груши и соевого соуса, обжаренная на углях.
                 </p>
               </div>
             </div>
@@ -150,45 +156,51 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">КОРЕЯ РЯДОМ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Мы не просто готовим корейскую еду — мы привозим сюда целую культуру. Открытая кухня, запах дымящегося гриля, соусы ручной ферментации и тёплая атмосфера, где чувствуешь себя как в уличном кафе Сеула. Приходи один или большой компанией.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Наша история
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div
+            className="vibe-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/43325a48-94f2-4f69-be3d-1ddacd9ad595.jpg")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @KIMCHI.REST
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/4cd85489-a601-416b-be97-0c3145804e93.jpg"
+                alt="Корейская кухня 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/514cd80a-3007-486a-a272-f45dc41c110e.jpg"
+                alt="Корейская кухня 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/43325a48-94f2-4f69-be3d-1ddacd9ad595.jpg"
+                alt="Атмосфера ресторана"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/7be65789-0d9c-42b8-90fd-b580162837b2/files/27f1a310-dfd3-4380-8111-26de9d6a2e95.jpg"
+                alt="Булгоги"
               />
             </div>
           </div>
@@ -197,9 +209,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">КИМЧИ★РЕС</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Аутентичная корейская кухня в твоём городе. Рецепты из Сеула, тепло домашней кухни.
           </p>
         </div>
         <div className="footer-links">
@@ -217,12 +229,12 @@ export default function Index() {
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                Доставка
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Контакты
               </a>
             </li>
           </ul>
@@ -230,16 +242,29 @@ export default function Index() {
         <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Пт: 12:00 — 23:00</li>
+            <li>Сб–Вс: 11:00 — 23:00</li>
+            <li style={{ marginTop: "10px", color: "var(--primary)", fontWeight: 700 }}>
+              Доставка до 22:30
+            </li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div className="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li>+7 (XXX) XXX-XX-XX</li>
+            <li>ул. Ваша улица, д. 1</li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Telegram
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </>
