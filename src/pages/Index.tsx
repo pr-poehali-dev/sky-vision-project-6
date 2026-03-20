@@ -1,4 +1,8 @@
 export default function Index() {
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="grain-overlay" />
@@ -6,12 +10,12 @@ export default function Index() {
       <header className="header">
         <div className="logo">КИМЧИ★РЕС</div>
         <nav>
-          <a href="#">Меню</a>
-          <a href="#">О нас</a>
-          <a href="#">Атмосфера</a>
-          <a href="#">Контакты</a>
+          <a href="#menu" onClick={(e) => { e.preventDefault(); scrollTo("menu"); }}>Меню</a>
+          <a href="#about" onClick={(e) => { e.preventDefault(); scrollTo("about"); }}>О нас</a>
+          <a href="#vibe" onClick={(e) => { e.preventDefault(); scrollTo("vibe"); }}>Атмосфера</a>
+          <a href="#contacts" onClick={(e) => { e.preventDefault(); scrollTo("contacts"); }}>Контакты</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta" onClick={() => scrollTo("contacts")}>Забронировать</button>
       </header>
 
       <main>
@@ -62,7 +66,7 @@ export default function Index() {
           </div>
         </div>
 
-        <section className="section-padding">
+        <section id="menu" className="section-padding">
           <div className="section-header">
             <h2 className="section-title">ХИТЫ ШЕФА</h2>
             <a
@@ -154,8 +158,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="retro-vibe">
-          <div>
+        <section id="vibe" className="retro-vibe">
+          <div id="about">
             <h2 className="vibe-title">КОРЕЯ РЯДОМ.</h2>
             <p className="vibe-text">
               Мы не просто готовим корейскую еду — мы привозим сюда целую культуру. Открытая кухня, запах дымящегося гриля, соусы ручной ферментации и тёплая атмосфера, где чувствуешь себя как в уличном кафе Сеула. Приходи один или большой компанией.
@@ -207,7 +211,7 @@ export default function Index() {
         </section>
       </main>
 
-      <footer>
+      <footer id="contacts">
         <div>
           <div className="footer-logo">КИМЧИ★РЕС</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
